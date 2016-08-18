@@ -1,0 +1,168 @@
+body {
+	background-color: gray;	
+}
+.cont, .contimg  {
+	clear: right;
+	height: auto;
+	position: relative;
+	
+}
+.cont1{
+	height: auto;
+	position: relative;
+}
+
+b,caption{
+	font-size: 20px;
+	font-family: arial;
+	color: white;
+}
+.iusu {
+width: 350px;
+margin: auto;
+
+}
+.iusu1{
+	width: 600px;
+	margin: auto;
+	border: 1px solid black;
+}
+.iusu, .asignacion, .entrada {
+	border: 1px solid black;
+	padding: 5px;
+}
+.asignacion{
+	text-align: right;
+	width:30%;
+}
+.img{
+	width: 40%;
+}
+img.imgpro{
+	width: 120px;
+	height: 120px;
+}
+.des{
+	width: 60%;
+}
+.entrada{
+	text-align: center;
+	width: 70%;
+}
+input.inen{
+	width: 100%;
+	font-size: 15px;
+	background-color: gray;
+	color: black;
+	padding: 5px;
+}
+input.inen:focus{
+background-color: white;
+
+}
+nav{
+height: auto;
+float: right;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+li {
+	float: left;
+
+}
+li a {
+	display: block;
+	padding: 5px;
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+li a:hover {
+	background-color: black;
+}
+textarea {
+	background-color: gray;
+	width: 100%;
+	height: 150px;
+	padding: 5px;
+	resize:none;
+}
+textarea:focus{
+	background-color: white;
+}
+.click {
+	background-color: white;
+	color: black;
+	border:none;
+	padding: 8px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.click1 {
+	background-color: white;
+	color: black;
+	border:none;
+	padding: 8px 12px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-align: center;
+}
+input[type="file"]{
+	font-size: 15px;
+}
+
+
+.icono{
+	width: 25px;
+	height: auto;
+	opacity: 0.25;
+}
+.icono:hover{
+	opacity: 1;
+}
+div.cont1 td.img{
+	float: left;
+}
+.producto{
+	float: left;
+}
+.desc{
+	overflow-y: scroll;
+	height: 100px;
+}
+.boton{
+	text-align: center;
+	 padding: 5px;
+	width: 100%;
+	height: auto;
+	background-color: #A4A4A4;
+	border:none;
+}
+.total{
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+ background-color: #A4A4A4;
+ border:none;
+
+}
+.iusu1 td.proc{
+	text-align: center;
+	padding-top: 20px;
+	border: 1px solid black;
+}
+.iusu1 tr:first-child td{
+	background-color: #A4A4A4;
+	text-align: center;
+}
+.iusu1 tr:hover{
+	background-color: #848484;
+}
