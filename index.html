@@ -1,10 +1,288 @@
+<!DOCTYPE>
 <html>
-  <head>
-    <title>My homepage</title>
-  </head>
-  <body>
-    <h1>hello world this is my homepage</h1>
-    <h2><a href="php3/index.php" style="text-decoration: none; ">http://a2pr.gihub.io</a></h2>
-    <img src="img/Edjr.png" alt="EDJE" style=" width: 120px; height: auto;">
-  </body>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css\main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll">
+  <!-- header image -->
+  <header class="d-flex align-items-center justify-content-center">
+    <!-- <img class="img-fluid d-xl-block d-none" src="http://www.viajamor.com/blog/wp-content/uploads/2016/09/83556195.jpg" alt="">
+    <img class="img-fluid d-none d-lg-block d-xl-none" src="http://www.afullchola.com/wp-content/uploads/2016/05/avila.jpg" alt="">
+    <img class="img-fluid d-none d-md-block d-lg-none" src="http://4ruedasunmorral.com/wp-content/uploads/national-park-of-el-avila-caracas-venezuela-alepho.jpg" alt="">
+    <img class="img-fluid  d-sm-block d-md-none" src="https://http2.mlstatic.com/fotografias-panoramicas-del-avila-y-de-caracas-D_NQ_NP_176611-MLV20624577917_032016-F.jpg" alt=""> -->
+
+    <div class="transBlock text-center text-white px-3 ">
+      <div>
+        <h2 class="card-title">Welcome To My Website</h2>
+        <p class="card-text">Welcome Mr/Ms Recruiter: thank you for looking at my profile. This website lists all my current skills and projects (completed and in progress) </p>
+        <a href="#About" class="btn btn-primary">Lets Start with me</a>
+      </div>
+
+    </div>
+  </header>
+  <!-- responsive sticky nav -->
+  <nav class=" nav-bar navbar-dark bg-dark navbar-expand-md sticky-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right d-md-none " type="button" data-toggle="collapse" data-target="#myNav"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="myNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center pt-3" id="myNav">
+        <div class="navbar-nav text-center text-uppercase navFont">
+          <a class="nav-item nav-link " href="#About">About me</a>
+          <a class="nav-item nav-link" href="#Skills">Skills</a>
+          <a class="nav-item nav-link" href="#Portafolio">Portafolio</a>
+          <a class="nav-item nav-link" href="#Contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div data-spy="scroll" data-target="#mainNav" data-offset="0">
+    <!-- about section -->
+    <section id="About" class="container-fluid p-0 pt-5 ">
+      <article class="mt-5 py-5">
+        <div class="container text-white ">
+          <h1>Who I am?</h1>
+          <div class="row">
+            <!-- Presentation text -->
+            <div class="col-7">
+              <p>
+                My name is Andres Payema, a Venezuelan living in Brazil right now. : I'm a web developer who is looking for a job, where i can learn
+                new tecnologies and get better in the ones i know. Programming has been a hobby for me for about 2 years, and I'm looking forward to making a career out of it
+                <hr style="color:gray"> Eu me chamo Andres Payema, a Venezuelan morando em Brasil agora. Eu sou um programador da web à procura
+                de um emprego onde posso aprender novas tecnologias e melhorar as que conheço. A programação tem sido um
+                passatempo há mais de 2 anos e espero ser minha carreira.
+              </p>
+            </div>
+            <!-- Photo and social network -->
+            <div class="row col-5  ">
+              <!-- Photo -->
+              <div class="col-12">
+                <img src="images/perfil.png" alt="" class="img-fluid photoPerfil">
+                <!-- <img class="rounded img-fluid d-sm-block d-md-none" src="http://via.placeholder.com/300x250" alt="profilePhoto">
+                <img class="rounded img-fluid d-none d-md-block d-lg-none" src="http://via.placeholder.com/500x350" alt="profilePhoto">
+                <img class="rounded img-fluid d-none d-lg-block" src="http://via.placeholder.com/700x400" alt="profilePhoto"> -->
+              </div>
+              <!-- Social Network -->
+              <div class="col-12 row  my-2 m-md-0 py-sm-2 py-md-3 px-2">
+                <div class="col-sm-3">
+                  <a href="https://www.linkedin.com/in/AndresPayema" target="__blank">
+                    <img class="logo img-fluid" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-128.png"
+                      alt="">
+                  </a>
+                </div>
+                <div class="col-sm-3 ">
+                  <a href="mailto:a2payema@gmail.com" target="__blank">
+                    <img class="logo img-fluid" src="https://cdn3.iconfinder.com/data/icons/vector-icons-for-mobile-apps-2/512/Mail_black-128.png"
+                      alt="">
+                    
+                  </a>
+                </div>
+                <div class="col-sm-3 ">
+                  <a href="https://twitter.com/A2PRodriguez" target="__blank">
+                    <img class="logo img-fluid" src="https://image.flaticon.com/icons/png/128/9/9148.png" alt="twitterLogo">
+                    </a>
+                </div>
+                <div class="col-sm-3 ">
+                  <a href="https://github.com/a2pr" target="__blank">
+                    <img class="logo img-fluid" src="https://image.flaticon.com/icons/png/128/25/25231.png" alt="twitterLogo">
+                    </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </article>
+    </section>
+    <!-- Skill and levels -->
+    <section id="Skills" class="py-5">
+
+      <div class="container pt-5">
+        <h2 class="text-light text-uppercase">Skills & knowledge</h1>
+          <!-- Basics -->
+          <h1>Basics</h1>
+          <div class="card-deck" id="basic">
+            <div class="card bg-light" id="Php">
+              <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1459870313PHP-logo.svg.png" alt="" class="mx-auto card-img-top img-fluid logo1-md px-3  mt-3 ">
+              <div class="card-header mt-4 text-center"> PHP</div>
+              <div class="card-body text-align ">
+                <p>Experience:
+                  <br>&lt;1 year</p>
+              </div>
+            </div>
+            <div class="card bg-light " id="C#">
+              <img src="http://www.programmingapps.net/resources_progapps/uploads/2016/11/csharp7.png" alt="" class=" img-fluid card-img-top px-2 logo1-md  px-sm-3 mt-2 px-lg-5">
+              <div class="card-header mt-4 text-center">C#</div>
+              <div class="card-body ">
+                <p>Experience:
+                  <br>&lt;1 year
+                  <br>You can see my progress with this skill in this
+                  <a href="#Portafolio">MonoGame Project</a>
+                </p>
+                <span> </span>
+              </div>
+            </div>
+            <div class="card bg-light " id="Jquery">
+              <img src="http://www.ticarte.com/sites/su/users/290/teaser/687474703a2f2f707265636973696f6e2d736f6674776172652e636f6d2f77702d636f6e74656e742f75706c6f6164732f32.gif" alt="" class="card-img-top logo1-md px-2  mt-3 img-fluid">
+              <div class="card-header mt-3 text-center">Jquery</div>
+              <div class="card-body ">
+                <p>Experience:
+                  <br>&lt;1 year</p>
+              </div>
+            </div>
+          </div>
+          <!-- Intermidate -->
+          <h1>Intermidate</h1>
+          <div class="card-deck">
+              <div class="card bg-light " id="Bootstrap">
+                  <img class="card-img-top img-fluid logo1 px-2  mt-3  mx-auto" src="https://cdn6.aptoide.com/imgs/a/5/6/a563725610cb36280177c3c9a1743168_icon.jpg?w=256"
+                    alt="BootStrapLogo">
+                  <div class="card-header ">Bootstrap</div>
+                  <div class="card-body ">
+                    <p>Expirence:
+                      <br> &lt;1 year
+                      <br>You can see my progress in this skill on this page that was maded with bootstrap 4 <br>
+                    Experience with <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-ZHTDNX3A.jpg" target="__blank"> PSD into HTML</a><br>
+                  Experience with web development with <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-2524BBS9.jpg" target="__blank">BootStrap framework</a> </p>
+                    <span> </span>
+                  </div>
+                </div>
+            <div class="card bg-light " id="Wordpress">
+              <img class="card-img-top logo1 img-fluid px-2  mt-3  mx-auto" src="http://vectorlogofree.com/wp-content/uploads/2014/07/33619-wordpress-logo-of-a-letter-in-a-circle-icon-vector-icon-vector-eps.png"
+                alt="WordpressLogo">
+             
+              <div class="card-header mt-2 text-center">Wordpress</div>
+              <div class="card-body text-align ">
+                <p>Experience:
+                  <br>&gt;1 year
+                  <br> &lt; 2 years</p>
+              </div>
+            </div>
+            <div class="card bg-light " id="Javascript">
+              <img class="card-img-top logo1 px-2 img-fluid  mt-3   mx-auto" src="http://www.akencodes.com/images/javascript.svg"
+                alt="JavascriptLogo">
+             
+              <div class="card-header mt-2 text-center">Javascript</div>
+              <div class="card-body text-align ">
+                <p>Experience:
+                  <br>&gt;1 year
+                  <br> &lt; 2 years</p>
+              </div>
+            </div>
+            <div class="card bg-light " id="Photoshop">
+              <img class="card-img-top logo1 px-2 img-fluid mt-3   mx-auto" src="https://img.utdstc.com/icons/256/adobe-photoshop-express-android.png"
+                alt="PhotoshopLogo">
+              
+              <div class="card-header mt-2 text-center">Photoshop</div>
+              <div class="card-body text-align ">
+                <p>Experience:
+                  <br>&gt;1 year
+                  <br> &lt; 2 years</p>
+              </div>
+            </div>
+          </div>
+          <!-- Advanced -->
+          <h1>Avanced</h1>
+          <div class="card-deck">
+            <div class="card bg-light " id="HTML">
+              <img class="card-img-top logo1-lg  img-fluid pt-3 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png"
+                alt="HtmlLogo">
+              
+              <div class="card-header mt-2 text-center">HTML</div>
+              <div class="card-body text-align ">
+                <p>Experience:
+                  <br>+2 year</p>
+              </div>
+            </div>
+            <div class="card bg-light " id="CSS">
+              <img class="card-img-top logo1-lg  img-fluid pt-3 mx-auto" src="http://www.anujgakhar.com/wp-content/uploads/2014/07/css1.png"
+                alt="CSSLogo">
+              <div class="card-header mt-2 text-center">Css</div>
+              <div class="card-body text-align ">
+                <p>Experience:
+                  <br>+2 year</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Project holder -->
+    <section id="Portafolio" class="py-5" >
+     
+      <div class=" container  pt-5">
+          <h2 class="text-center text-light text-uppercase">Portafolio</h2>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-header mt-2 text-center">Exploding Teddies C# Project</div>
+            <div class="card-body">
+              <span>A simple Monogame using C# and basic concepts for game developing</span>
+            </div>
+            <a href="https://github.com/a2pr/TeddyBearProject" target="__blank">
+              <img class=" img-fluid card-img-bottom p-3 " src="https://raw.githubusercontent.com/a2pr/TeddyBearProject/master/XnaContent/graphics1/teddybear.png"
+                alt="">
+            </a>
+          </div>
+          <div class="card">
+            <div class="card-header">Memrise Tracker</div>
+            <div class="card-body">
+              <span>A Chrome extension using Javascript and Jquery, still on development</span>
+            </div>
+            <a href="https://github.com/a2pr/newChromeExtension" target="__blank">
+              <img class="img-fluid card-img-bottom p-3 "  src="http://sm.pcmag.com/pcmag_uk/review/m/memrise/memrise_u88g.png"
+                alt="">
+            </a>
+          </div>
+          <div class="card " style="height: 275px">
+            <div class="card-header">More Projects in progress...</div>
+            <img src="http://www.benanova.com/Site/themed_images/in_construction/in_construction3.jpg" class="img-fluid card-img-bottom p-3"
+              alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Contact footer -->
+    <footer id="Contact"  class="py-3">
+      <div class=" container mx-auto row">
+        <div class="col d-none d-md-block text-center">
+          <h3>This webpage will be constantly updated, as I learn new things</h3>
+        </div>
+        <!-- Form contact -->
+        <!-- <div class="col px-5 ">
+          <h3>Sent me and email or contact me here:</h3>
+          <form action="" class="">
+            <div class="form-group row">
+              <label for="email" class="d-none d-md-block col-md-3">Email:</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Your email goes here...">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="message" class="d-none d-md-block col-md-3">Message:</label>
+              <div class="col-md-9">
+                <textarea name="" cols="30" rows="5" class="form-control" placeholder="Your message goes here..."></textarea>
+              </div>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary btn-lg ">Sent Message</button>
+            </div>
+          </form>
+        </div> -->
+      </div>
+    </footer>
+    </div>
+</body>
+
 </html>
