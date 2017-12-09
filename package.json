@@ -1,0 +1,20 @@
+{
+  "name": "a2pr-portafolio",
+  "version": "1.0.0",
+  "description": "Hi world this is my first contribution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a2pr/a2pr.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a2pr/a2pr.github.io/issues"
+  },
+  "homepage": "https://github.com/a2pr/a2pr.github.io#readme",
+  "dependencies": {}
+}
