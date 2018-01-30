@@ -1,0 +1,16 @@
+$item-size:1.875em;
+.menu1{
+    background: #00290d;
+    opacity: 0.6;
+}
+//probably gonna change this
+
+a{
+    color: white;
+    font-size: $item-size;
+    font-family: "Arrus BT";
+    &:hover{
+        color: gray;
+        font-family: $item-size+1em;
+    }
+}
