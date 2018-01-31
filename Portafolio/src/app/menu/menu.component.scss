@@ -1,4 +1,6 @@
 $item-size:1.875em;
+
+$primary-font: "Arrus BT";
 .menu1{
     background: #00290d;
     opacity: 0.6;
@@ -8,7 +10,7 @@ $item-size:1.875em;
 a{
     color: white;
     font-size: $item-size;
-    font-family: "Arrus BT";
+    font-family: $primary-font;
     &:hover{
         color: gray;
         font-family: $item-size+1em;
