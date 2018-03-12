@@ -1,0 +1,22 @@
+@import "../../styles.scss";
+.back{
+    width: 100%;
+    height:500px ;
+    background-color: $primary-color;
+}
+.one{
+    width: 60%;
+    max-height:500px ;
+    
+}
+.two{
+    width: 40%;
+    max-height:500px;
+    .mat-card{
+        max-height:400px;
+    }
+    
+}
+#perfil{
+    max-height: 25%;
+}

@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 $primary-font: "Arrus BT";
+$primary-color: #006502;
+$secondary-color:#24a8ba;
+$third-color:#e1c88c;
+$fourt-color:#00290d;
 body { 
     padding: 0; 
     margin: 0; 

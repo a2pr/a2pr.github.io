@@ -10,7 +10,8 @@ import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-
+import { AboutComponent } from './about/about.component';
+import { MatModuleRequiredModule } from './mat-module-required/mat-module-required.module';
 
 
 @NgModule({
@@ -18,14 +19,17 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     MenuComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatModuleRequiredModule
   ],
   providers: [],
   bootstrap: [AppComponent]
