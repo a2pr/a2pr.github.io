@@ -1,22 +1,32 @@
 @import "../../styles.scss";
 .back{
+    padding-top:20px; 
+    padding-bottom:10px; 
     width: 100%;
-    height:500px ;
+    height:600px ;
     background-color: $primary-color;
 }
 .one{
     width: 60%;
-    max-height:500px ;
-    
+    max-height:100% ;
+    padding-left:30px;
+    color: white;
 }
 .two{
     width: 40%;
-    max-height:500px;
-    .mat-card{
-        max-height:400px;
+    max-height:100%;
+    #perfil{
+            max-height: 75%;
+            max-width: 100%;
+        }
+    a{
+        margin-left:20px; 
+        margin-right:20px; 
     }
-    
-}
-#perfil{
-    max-height: 25%;
+    i{
+        font-size: 70px;
+    }
+    .three{
+      margin-top: 10px;  
+    }
 }
