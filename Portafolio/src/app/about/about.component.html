@@ -1,21 +1,27 @@
-<div class="back" fxLayout="row" fxLayoutGap="10px" >
-  <div class="one">
-    <h1>Who I am?</h1>
-    <p>My name is Andres Payema, a Venezuelan living in Brazil right now. : I'm a web developer who is looking for a job, where i can learn new tecnologies and get better in the ones i know. Programming has been a hobby for me for about 2 years,
-       and I'm looking forward to making a career out of it</p>
-    <mat-divider></mat-divider>
-    <p>Eu me chamo Andres Payema, a Venezuelan morando em Brasil agora. Eu sou um programador da web à procura de um emprego onde posso aprender novas tecnologias e melhorar as que conheço. 
-      A programação tem sido um passatempo há mais de 2 anos e espero ser minha carreira.</p>
+<div class="back" fxLayout="column" fxLayoutGap="10px" >
+  <div fxLayout="row">
+      <div class="one">
+          <h1>Who I am?</h1>
+          <p>My name is Andres Payema, a Venezuelan living in Brazil right now. : I'm a web developer who is looking for a job, where i can learn new tecnologies and get better in the ones i know. Programming has been a hobby for me for about 2 years,
+             and I'm looking forward to making a career out of it</p>
+          <mat-divider></mat-divider>
+          <p>Eu me chamo Andres Payema, a Venezuelan morando em Brasil agora. Eu sou um programador da web à procura de um emprego onde posso aprender novas tecnologias e melhorar as que conheço. 
+            A programação tem sido um passatempo há mais de 2 anos e espero ser minha carreira.</p>
+        </div>
+        <div fxLayout="column" class="two">
+            <!-- not the correct size -->
+            <img id="perfil" fxFlexAlign="center"  src="../../assets/images/perfil.png" alt="">
+            <div class="three" fxLayout="row">
+              <a fxFlex mat-icon-button  href="https://github.com/a2pr"><i class="fa fa-github"></i></a>
+              <a fxFlex mat-icon-button  href="mailto:a2payema@gmail.com"><i class="fa fa-envelope"></i></a>
+              <a fxFlex mat-icon-button  href="https://www.linkedin.com/in/AndresPayema"><i class="fa fa-linkedin"></i></a>
+              <a fxFlex mat-icon-button  href="https://twitter.com/A2PRodriguez"><i class="fa fa-twitter-square"></i></a>
+              
+            </div>
+        </div>
   </div>
-  <div class="two">
-      <!-- not the correct size -->
-      <img id="perfil" src="../../assets/images/perfil.png" alt="">
-      <div class="three">
-        <a mat-icon-button  href="https://github.com/a2pr"><i class="fa fa-github"></i></a>
-        <a mat-icon-button  href="mailto:a2payema@gmail.com"><i class="fa fa-envelope"></i></a>
-        <a mat-icon-button  href="https://www.linkedin.com/in/AndresPayema"><i class="fa fa-linkedin"></i></a>
-        <a mat-icon-button  href="https://twitter.com/A2PRodriguez"><i class="fa fa-twitter-square"></i></a>
-        
-      </div>
+  <div fxFlexAlign="center">
+    <a id="next" color="primary" mat-raised-button routerLink="/skills">NEXT SKILLS SO FAR</a>
   </div>
-</div>
+  <div>
+  

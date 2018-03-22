@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MatModuleRequiredModule } from './mat-module-required/mat-module-required.module';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MatModuleRequiredModule } from './mat-module-required/mat-module-requir
     FooterComponent,
     HomeComponent,
     AboutComponent,
+    SkillsComponent,
     
   ],
   imports: [
