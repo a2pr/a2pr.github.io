@@ -153,7 +153,7 @@ export const SKILLS: Skill[]=[
         id:9,
         name:'Angular',
         level:'Intermidate',
-        image:'../../assets/images/andular.png',
+        image:'../../assets/images/angular.png',
         experience:'1 year',
         projects:[
             {

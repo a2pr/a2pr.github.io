@@ -1,22 +1,25 @@
-<div class="container" fxLayout="column" fxLayoutGap="10px">
-    <div fxFlex>
-        <div>
-            <h2>Skill</h2>
-            <hr>
-        </div>
-    </div>
-    <div fxFlex *ngIf='skills'>
-        <mat-card *ngFor='let skill of skills'>
-            <mat-card-header>
-                <mat-card-title>{{skill.name}} </mat-card-title>
-            </mat-card-header>
-            <img height="200px" src="{{skill.image}}" alt="">
-            <mat-card-content>
-                <h4>skill.experience</h4>
-                <mat-chip-list >
-                    <mat-chip>{{skill.level}}</mat-chip>
-                </mat-chip-list>
-            </mat-card-content>
-        </mat-card>
-    </div>
+<div class="container" 
+    fxLayout="row"
+    fxLayout.sm='column'
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutAlign="start start"
+    fxLayoutGap="20px">
+    <!-- Not good enought -->
+    <mat-grid-list fxFlex cols='2' rowsHeight='300px'>
+        <mat-grid-tile *ngFor='let skill of skills'>
+            <mat-card   class="card-skill" >
+                <mat-card-header>
+                    <mat-card-title>{{skill.name}} </mat-card-title>
+                </mat-card-header>
+                <img  height="200px" src="{{skill.image}}" alt="">
+                <mat-card-content>
+                    <h4>{{skill.experience}}</h4>
+                    <mat-chip-list >
+                        <mat-chip>{{skill.level}}</mat-chip>
+                    </mat-chip-list>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+      
 </div>
