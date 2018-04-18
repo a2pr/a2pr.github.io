@@ -14,7 +14,7 @@ skills:Skill[];
 
   ngOnInit() {
     this.skillService.getSkills()
-      .subscribe(skills=>this.skills=skills)
+      .subscribe(skills=>this.skills=skills.filter((skills)=>skills.level==="Basic"))
   }
 
 }
