@@ -1,19 +1,51 @@
-<div class="container" fxLayout="column" fxLayoutGap="20px">
+<div class="container back" fxLayout="column" fxLayoutGap="20px">
     <!-- Not good enought -->
     <div fxFlex>
         <div>
             <h2>
                 Skills so far
             </h2>
-            <hr>
         </div>
         <div fxLayoutAlign="center">
-                <h3 >Basic level</h3>
+            <h3>Basic level</h3>
         </div>
     </div>
     <div fxFlex>
         <div fxLayout fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="10px">
-            <mat-card *ngFor='let skill of skills' class="card-skill">
+            <mat-card *ngFor='let skill of skillsBasic' class="card-skill">
+                <mat-card-header>
+                    <mat-card-title>{{skill.name}} </mat-card-title>
+                </mat-card-header>
+                <img height="200px" src="{{skill.image}}" alt="">
+                <mat-card-content>
+                    <h4>{{skill.experience}}</h4>
+                    <mat-chip-list >
+                        <mat-chip color="primary">{{skill.level}}</mat-chip>
+                    </mat-chip-list>
+                    <h3>Projects</h3>
+                    <mat-list *ngFor="let project of skill.projects">
+                            
+                                
+                                <mat-list-item *ngIf="!(project.description=='')">
+                                    <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
+                                    <mat-chip-list mat-line *ngFor='let tag of project.tags'>
+                                        <mat-chip>{{tag}}</mat-chip>
+                                    </mat-chip-list>
+                                </mat-list-item>
+                        
+                    </mat-list>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div fxFlex>
+        <div fxLayoutAlign="center">
+            <h3>Intermidate level</h3>
+        </div>
+    </div>
+    <div fxFlex>
+        <div fxLayout fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="10px">
+            <mat-card *ngFor='let skill of skillsInter' class="card-skill">
                 <mat-card-header>
                     <mat-card-title>{{skill.name}} </mat-card-title>
                 </mat-card-header>
@@ -23,6 +55,49 @@
                     <mat-chip-list>
                         <mat-chip color="primary">{{skill.level}}</mat-chip>
                     </mat-chip-list>
+                    <h3>Projects</h3>
+                    <mat-list *ngFor="let project of skill.projects"> 
+                                <mat-list-item *ngIf="!(project.description=='')">
+                                    <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
+                                    <mat-chip-list mat-line *ngFor='let tag of project.tags'>
+                                        <mat-chip>{{tag}}</mat-chip>
+                                    </mat-chip-list>
+                                </mat-list-item>
+                                <mat-divider></mat-divider>
+                    </mat-list>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div fxFlex>
+        <div fxLayoutAlign="center">
+            <h3>Advanced level</h3>
+        </div>
+    </div>
+    <div fxFlex>
+        <div fxLayout fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="10px">
+            <mat-card *ngFor='let skill of skillsAdv' class="card-skill">
+                <mat-card-header>
+                    <mat-card-title>{{skill.name}} </mat-card-title>
+                </mat-card-header>
+                <img height="200px" src="{{skill.image}}" alt="">
+                <mat-card-content>
+                    <h4>{{skill.experience}}</h4>
+                    <mat-chip-list>
+                        <mat-chip color="primary">{{skill.level}}</mat-chip>
+                    </mat-chip-list>
+                    <h3>Projects</h3>
+                    <mat-list *ngFor="let project of skill.projects">
+                            
+                                
+                                <mat-list-item *ngIf="!(project.description=='')">
+                                    <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
+                                    <mat-chip-list mat-line *ngFor='let tag of project.tags'>
+                                        <mat-chip>{{tag}}</mat-chip>
+                                    </mat-chip-list>
+                                </mat-list-item>
+                        
+                    </mat-list>
                 </mat-card-content>
             </mat-card>
         </div>

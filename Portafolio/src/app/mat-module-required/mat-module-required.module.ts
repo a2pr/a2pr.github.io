@@ -5,12 +5,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatListModule} from '@angular/material/list';
+
 @NgModule({
   exports:[
     MatGridListModule,
     MatDividerModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatListModule,
   ],
   imports: [
     CommonModule,
@@ -18,7 +21,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatIconModule,
     MatDividerModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatListModule
   ],
   declarations: []
 })

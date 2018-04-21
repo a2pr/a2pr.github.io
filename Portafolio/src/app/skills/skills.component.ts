@@ -9,12 +9,22 @@ import { Skill } from '../shared/skill';
 })
 export class SkillsComponent implements OnInit {
 
-skills:Skill[];
+skillsBasic:Skill[];
+skillsInter:Skill[];
+skillsAdv:Skill[];
   constructor(private skillService:SkillService) { }
 
   ngOnInit() {
     this.skillService.getSkills()
-      .subscribe(skills=>this.skills=skills.filter((skills)=>skills.level==="Basic"))
+      .subscribe(skills=>{
+        this.skillsBasic=skills.filter((skills)=>skills.level==="Basic");
+        
+        this.skillsInter=skills.filter((skills)=>skills.level==="Intermidate");
+
+        this.skillsAdv=skills.filter((skills)=>skills.level==="Advanced");
+        
+      
+      })
   }
 
 }
