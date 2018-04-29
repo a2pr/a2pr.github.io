@@ -19,20 +19,18 @@
                 <img height="200px" src="{{skill.image}}" alt="">
                 <mat-card-content>
                     <h4>{{skill.experience}}</h4>
-                    <mat-chip-list >
+                    <mat-chip-list>
                         <mat-chip color="primary">{{skill.level}}</mat-chip>
                     </mat-chip-list>
                     <h3>Projects</h3>
                     <mat-list *ngFor="let project of skill.projects">
-                            
-                                
-                                <mat-list-item *ngIf="!(project.description=='')">
-                                    <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
-                                    <mat-chip-list mat-line *ngFor='let tag of project.tags'>
-                                        <mat-chip>{{tag}}</mat-chip>
-                                    </mat-chip-list>
-                                </mat-list-item>
-                        
+                        <mat-list-item class="tags" *ngIf="!(project.description=='')">
+                            <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
+                            <mat-chip-list  mat-line >
+                                <mat-chip *ngFor='let tag of project.tags'>{{tag}}</mat-chip>
+                            </mat-chip-list>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
                     </mat-list>
                 </mat-card-content>
             </mat-card>
@@ -56,14 +54,14 @@
                         <mat-chip color="primary">{{skill.level}}</mat-chip>
                     </mat-chip-list>
                     <h3>Projects</h3>
-                    <mat-list *ngFor="let project of skill.projects"> 
-                                <mat-list-item *ngIf="!(project.description=='')">
-                                    <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
-                                    <mat-chip-list mat-line *ngFor='let tag of project.tags'>
-                                        <mat-chip>{{tag}}</mat-chip>
-                                    </mat-chip-list>
-                                </mat-list-item>
-                                <mat-divider></mat-divider>
+                    <mat-list *ngFor="let project of skill.projects">
+                        <mat-list-item class="tags" *ngIf="!(project.description=='')">
+                            <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
+                            <mat-chip-list  mat-line >
+                                <mat-chip *ngFor='let tag of project.tags'>{{tag}}</mat-chip>
+                            </mat-chip-list>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
                     </mat-list>
                 </mat-card-content>
             </mat-card>
@@ -88,19 +86,19 @@
                     </mat-chip-list>
                     <h3>Projects</h3>
                     <mat-list *ngFor="let project of skill.projects">
-                            
-                                
-                                <mat-list-item *ngIf="!(project.description=='')">
-                                    <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
-                                    <mat-chip-list mat-line *ngFor='let tag of project.tags'>
-                                        <mat-chip>{{tag}}</mat-chip>
-                                    </mat-chip-list>
-                                </mat-list-item>
-                        
+                        <mat-list-item class="tags" *ngIf="!(project.description=='')">
+                            <a mat-button mat-line [href]="project.link"> {{project.description}}</a>
+                            <mat-chip-list  mat-line >
+                                <mat-chip *ngFor='let tag of project.tags'>{{tag}}</mat-chip>
+                            </mat-chip-list>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
                     </mat-list>
                 </mat-card-content>
             </mat-card>
         </div>
     </div>
-
+    <div fxFlex fxFlexAlign="center">
+        <a id="next" color="primary" mat-raised-button routerLink="/projects">NEXT Projects SO FAR</a>
+      </div>
 </div>

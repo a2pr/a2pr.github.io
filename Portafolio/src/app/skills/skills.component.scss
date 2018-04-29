@@ -1,11 +1,15 @@
 $secondary-color:#24a8ba;
 .back{
     background-color: $secondary-color;
+    padding-bottom:20px; 
 }
 .card-skill{
     min-width: 200px;
     margin: 0;
     margin-top:10px;
+}
+.tags{
+    margin-bottom:20px; 
 }
 mat-card{
     

@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillService } from './services/skill.service';
+import { ProjectsComponent } from './projects/projects.component';
 
 //services
 
@@ -27,6 +28,7 @@ import { SkillService } from './services/skill.service';
     HomeComponent,
     AboutComponent,
     SkillsComponent,
+    ProjectsComponent,
     
   ],
   imports: [
