@@ -7,7 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MatModuleRequiredModule } from './mat-module-required/mat-module-required.module';
 import 'hammerjs';
-
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 //components
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillService } from './services/skill.service';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectService } from './services/project.service';
 
 //services
 
@@ -37,9 +38,11 @@ import { ProjectsComponent } from './projects/projects.component';
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
-    MatModuleRequiredModule
+    MatModuleRequiredModule,
+    Ng2CarouselamosModule
+
   ],
-  providers: [SkillService],
+  providers: [SkillService, ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

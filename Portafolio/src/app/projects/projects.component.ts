@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillService } from '../services/skill.service';
-import { Skill } from '../shared/skill';
+import {Project} from '../shared/project'
+import { ProjectService } from '../services/project.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -8,14 +8,20 @@ import { Skill } from '../shared/skill';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects:Skill[];
-  constructor(private skillService:SkillService) { }
+  projects:Project[];
+  images:Array<string>=[];
+  constructor(private projectService:ProjectService) { }
 
   ngOnInit() {
-    this.skillService.getFeatured().subscribe((projects)=>{
-      this.projects=projects;
-      console.log(projects);
-    })
+    this.projectService.getFeatured()
+      .subscribe((projects)=>{
+        this.projects=projects;
+        this.projects.forEach((project)=>{
+          this.images.push(project.img);
+        })
+        console.log(this.images)
+      })
+  
   }
 
 }

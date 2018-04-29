@@ -3,4 +3,5 @@ export class Project{
     link:string;
     tags:Array<string>;
     featured:boolean;
+    img:string;
 }
