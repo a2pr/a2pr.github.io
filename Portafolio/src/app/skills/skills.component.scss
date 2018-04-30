@@ -1,7 +1,8 @@
 $secondary-color:#24a8ba;
 .back{
     background-color: $secondary-color;
-    padding-bottom:20px; 
+    padding-bottom:20px;
+    padding-left: 30px; 
 }
 .card-skill{
     min-width: 200px;
@@ -11,6 +12,13 @@ $secondary-color:#24a8ba;
 .tags{
     margin-bottom:20px; 
 }
-mat-card{
-    
+.angular-color{
+background-color: rgb(221, 3, 48)
+}
+.typescript-color{
+
+    background-color: rgb(40, 117, 195)
+}
+.neutral-color{
+    background-color: rgb(164, 151, 142)
 }

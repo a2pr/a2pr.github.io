@@ -46,7 +46,7 @@ export const SKILLS: Skill[]=[
     {
         id:5,
         name:'Bootstrap',
-        level:'Intermidate',
+        level:'Intermediate',
         image:'../../assets/images/bootstrap.jpg',
         experience:'1 year',
         projects:[
@@ -59,7 +59,7 @@ export const SKILLS: Skill[]=[
     {
         id:6,
         name:'WordPress',
-        level:'Intermidate',
+        level:'Intermediate',
         image:'../../assets/images/wordpress.png',
         experience:'>1 year',
         projects:[
@@ -69,7 +69,7 @@ export const SKILLS: Skill[]=[
     {
         id:7,
         name:'Javascript',
-        level:'Intermidate',
+        level:'Intermediate',
         image:'../../assets/images/javascript.svg',
         experience:'+1 year',
         projects:[
@@ -90,7 +90,7 @@ export const SKILLS: Skill[]=[
         //angular in develop
         id:9,
         name:'Angular',
-        level:'Intermidate',
+        level:'Intermediate',
         image:'../../assets/images/angular.png',
         experience:'1 year',
         projects:[
@@ -102,7 +102,7 @@ export const SKILLS: Skill[]=[
         //Ionic
         id:10,
         name:'Ionic',
-        level:'Intermidate',
+        level:'Intermediate',
         image:'../../assets/images/ionic.png',
         experience:'<1 year',
         projects:[
@@ -132,12 +132,36 @@ export const SKILLS: Skill[]=[
     {
         id:13,
         name:'Nativescript',
-        level:'Intermidate',
+        level:'Intermediate',
         image:'../../assets/images/nativescript.png',
         experience:'<1 Years',
         projects:[
             PROJECTS[9]
         ] 
-    }
+    },
+    {
+        id:14,
+        name:'Typescript',
+        level:'Intermediate',
+        image:'../../assets/images/typescrypt.jpg',
+        experience:'<1 Years',
+        projects:[
+            PROJECTS[7],
+            PROJECTS[8],
+            PROJECTS[9],
+        ] 
+    },
+    {
+        id:15,
+        name:'SASS',
+        level:'Basic',
+        image:'../../assets/images/sass.png',
+        experience:'<1 Years',
+        projects:[
+            PROJECTS[7],
+            PROJECTS[8],
+            PROJECTS[9],
+        ] 
+    },
 
 ]

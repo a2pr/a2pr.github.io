@@ -19,6 +19,7 @@ import { SkillService } from './services/skill.service';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectService } from './services/project.service';
 import { ContactComponent } from './contact/contact.component';
+import { ResumeComponent } from './resume/resume.component';
 
 //services
 
@@ -32,6 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
+    ResumeComponent,
     
   ],
   imports: [

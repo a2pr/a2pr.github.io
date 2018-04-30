@@ -3,7 +3,7 @@
     <div fxFlex>
         <div>
             <h2>
-                Skills so far
+               Technical skills so far
             </h2>
         </div>
         <div fxLayoutAlign="center">
@@ -98,7 +98,7 @@
             </mat-card>
         </div>
     </div>
-    <div fxFlex fxFlexAlign="center">
+    <div *ngIf='control' fxFlex fxFlexAlign="center">
         <a id="next" color="primary" mat-raised-button routerLink="/projects">NEXT Projects SO FAR</a>
       </div>
 </div>

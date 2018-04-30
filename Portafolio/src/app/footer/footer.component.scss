@@ -1,9 +1,11 @@
 $primary-font: "Arrus BT";
 .footer1{
-    height: 300px;
+    height: 200px;
     width: 100%;
     background-color: 	#e1c88c;
-    h3{
+    padding-top: 20px;
+    h2{
         font-family: $primary-font; 
+        text-align: center;
     }
 }

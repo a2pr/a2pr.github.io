@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 @Component({
@@ -7,7 +7,8 @@ import {MatDividerModule} from '@angular/material/divider';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  @Input()
+  control:boolean=true;
   constructor() { }
 
   ngOnInit() {

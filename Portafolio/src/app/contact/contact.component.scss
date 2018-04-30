@@ -1,0 +1,17 @@
+$fourt-color:#00290d;
+p{
+    a:first-child{
+        margin-left: 20px;
+    }
+    a{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.container{
+    padding-top:25px;
+    padding-bottom: 25px; 
+    padding-left:30px; 
+    background-color: $fourt-color;
+    color: white;
+}

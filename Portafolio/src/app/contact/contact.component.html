@@ -1,3 +1,45 @@
-<p>
-  contact works!
-</p>
+<div fxLayout="column" fxLayoutGap="10px" class="container">
+  <div fxFlex>
+    <div>
+      <h3>Contact me </h3>
+      <hr>
+    </div>
+  </div>
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="50" fxFlexOffset="20px">
+        <mat-card>
+          <mat-card-title>
+            My contact Information
+          </mat-card-title>
+          <mat-card-content>
+            <address>
+              <i class="fa fa-envelope"></i>:
+              <a href="mailto:a2payema@gmail.com">a2payema@gmail.com</a>
+              <br>
+              <i class="fa fa-linkedin"></i>:
+              <a href="https://www.linkedin.com/in/andrespayema/">Andres Payema</a>
+              <br>
+              <i class="fa fa-github"></i>:
+              <a href="https://github.com/a2pr">a2pr</a>
+            </address>
+          </mat-card-content>
+          <mat-card-footer>
+            <p>
+
+              <a md-raised-button>
+                <i class="fa fa-skype"></i> a2payema</a>
+              <a md-raised-button href="mailto:a2payema@gmail.com">
+                <i class="fa fa-envelope-o"></i> Email</a>
+            </p>
+
+          </mat-card-footer>
+        </mat-card>
+      </div>
+    </div>
+
+  </div>
+  <div *ngIf='control' fxFlex fxFlexAlign="center">
+    <a  color="primary" mat-raised-button routerLink="/resume">Finally...</a>
+  </div>
+</div>

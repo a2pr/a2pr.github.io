@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import {Project} from '../shared/project'
 import { ProjectService } from '../services/project.service';
 @Component({
@@ -7,7 +7,8 @@ import { ProjectService } from '../services/project.service';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
+  @Input()
+  control:boolean=true;
   projects:Project[];
   images:Array<string>=[];
   constructor(private projectService:ProjectService) { }
