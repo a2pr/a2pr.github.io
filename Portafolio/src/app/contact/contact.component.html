@@ -21,19 +21,14 @@
               <a href="https://www.linkedin.com/in/andrespayema/">Andres Payema</a>
               <br>
               <i class="fa fa-github"></i>:
-              <a href="https://github.com/a2pr">a2pr</a>
+              <a href="https://github.com/a2pr">a2pr</a><br>
+              <a md-raised-button>
+                  <i class="fa fa-skype"></i> a2payema</a>
             </address>
           </mat-card-content>
-          <mat-card-footer>
-            <p>
-
-              <a md-raised-button>
-                <i class="fa fa-skype"></i> a2payema</a>
-              <a md-raised-button href="mailto:a2payema@gmail.com">
-                <i class="fa fa-envelope-o"></i> Email</a>
-            </p>
-
-          </mat-card-footer>
+          <mat-card-actions *ngIf="controlDocument">
+              <a  color="primary" mat-raised-button href="./assets/documents/CV.pdf" download>CV PDF version </a>
+          </mat-card-actions>
         </mat-card>
       </div>
     </div>

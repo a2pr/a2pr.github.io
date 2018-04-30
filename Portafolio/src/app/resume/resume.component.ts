@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
   buttonStatus:boolean=false;
+  documentStatus:boolean=true;
   constructor() { }
 
   ngOnInit() {

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ContactComponent implements OnInit {
   @Input()
   control:boolean=true;
+  controlDocument:boolean=true;
   constructor() { }
 
   ngOnInit() {
