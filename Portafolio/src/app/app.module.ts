@@ -18,6 +18,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { SkillService } from './services/skill.service';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectService } from './services/project.service';
+import { ContactComponent } from './contact/contact.component';
 
 //services
 
@@ -30,6 +31,7 @@ import { ProjectService } from './services/project.service';
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
+    ContactComponent,
     
   ],
   imports: [

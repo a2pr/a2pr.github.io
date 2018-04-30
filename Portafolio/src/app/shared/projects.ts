@@ -70,6 +70,13 @@ export const PROJECTS:Project[]=[
         tags:['typescript','Ionic','Cordova'],
         featured:true, 
         img:'./assets/images/confusion.png'
+     },
+     //9
+     {
+        description:'Confusion Restaurant v.4',
+        link:'https://github.com/a2pr/conFusionNativescriptApp',
+        tags:['typescript','Nativescript'],
+        featured:true, 
+        img:'./assets/images/confusion.png'
      }
-
 ]

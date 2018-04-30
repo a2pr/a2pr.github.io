@@ -128,6 +128,16 @@ export const SKILLS: Skill[]=[
         projects:[
             PROJECTS[0]
         ]
+    },
+    {
+        id:13,
+        name:'Nativescript',
+        level:'Intermidate',
+        image:'../../assets/images/nativescript.png',
+        experience:'<1 Years',
+        projects:[
+            PROJECTS[9]
+        ] 
     }
 
 ]
